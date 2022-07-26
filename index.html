@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ?Plain Css -->
+    <link rel="stylesheet" href="style.css" />
     <!-- ?Tailwind Css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -12,6 +14,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              penguin: "#FFFBF0",
             },
           },
         },
@@ -20,5 +23,56 @@
 
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="bg-penguin">
+      <nav class="navbar flex justify-between pt-10">
+        <div class="sm:pl-20">
+          <img
+            class="sm:w-68 sm:h-10 object-cover"
+            src="./images/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="pr-40">
+          <ul class="flex space-x-8 sm:space-x-16">
+            <li class="">Home</li>
+            <li class="">Products</li>
+            <li class="">About Us</li>
+            <li class="">Contact</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="top-section sm:flex justify-around items-center p-10">
+        <div class="space-y-4">
+          <span class="sm:text-6xl text-yellow-400">Be The Penguin</span> <br />
+          <span class="sm:text-6xl text-blue-900">Of Winter</span>
+          <p class="text-xs sm:text-2xl">
+            Lorem Ipsum is simply dummy <br />
+            text of the printing and <br />
+            typesetting industry.
+          </p>
+          <button class="py-2 px-2 sm:py-4 sm:px-8 bg-[#A4BC46] rounded-xl">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 inline"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            Buy Now
+          </button>
+        </div>
+        <div>
+          <img class="w-65 sm:w-90" src="./images/model.png" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
